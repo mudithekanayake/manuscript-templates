@@ -1,19 +1,31 @@
  \leadauthor{Scientist}
 
-\title{Description of an amazing research project}
+\title{Mitochondrial biology drives nuclear genome evolution in \textit{Niphates digitalis} (Lamarck, 1814) (Demospongiae, Haplosclerida)}
 \shorttitle{Running title here}
 
-\author[1]{First Scientist \orcidlink{0000-0001-0000-0000}}
-\author[2]{Second Doctor \orcidlink {000-0002-0000-0000}}
-\author[1,\Letter]{Third Professor \orcidlink {000-0003-0000-0000}}
-\affil[1]{A University, Academic Street, Learningtown, UK}
-\affil[2]{B Institute, Chalk Road, Blackboardville, USA}
+\author[1]{Mudith Ekanayake \orcidlink{0000-0001-0000-0000}}
+\author[2]{Andia Chaves-Fonnegra \orcidlink {000-0002-0000-0000}}
+\author[1]{Viraj Muthye \orcidlink {000-0003-0000-0000}}
+\author[1,\Letter]{Dennis V. Lavrov \orcidlink {000-0004-0000-0000}}
+\affil[1]{Department of Ecology, Evolution and Organismal Biology, Iowa State University, 251 Bessey Hall, Ames, Iowa 50011, USA}
+\affil[2]{FAU-Harbor Branch, 5600 US 1 North, Fort Pierce, Florida 34946, USA}
 \date{}
 
 \maketitle
 
 \begin{abstract}
-Abstract of the paper goes here.
+Main points: \\- Most of the proteins lost in \textit{N. digitalis} had mitochondrial functions
+- Proteins  mapped to the term "Mitochondrion" (50) were overrepresented among duplicated proteins.
+In particular, three of the four Complex II proteins (SDHB, SDHC, and SDHD) were duplicated and five Complex I subunits (NDUFA7, NDUFA9, NDUFAB1, NDUFS1, and NDUFS8) experienced \textit{N. digitalis}-specific duplications.
+Four mitochondrial ribosomal proteins also were duplicated -- MRPL19, MRPS2, MRPL10, and MRPS14.
+Two mitochondrial tRNA synthetases had duplications in \textit{N. digitalis} -- Aspartate(D)--tRNA ligase (7) and Histidine--tRNA ligase (4).
+uplicated proteins in \textit{N. digitalis} mapped to processes related to RNA transport (10) and RNA localization (9)
+From mitocarta analysis: An additional 20 OGs, contained at least one species-specific protein from only \textit{N. digitalis} and \textit{A. queenslandica}.
+66 OGS (containing 226 proteins from \textit{N. digitalis}) contained non-mitochondrial proteins from both \textit{A. queenslandica} and \textit{E. muelleri}, but at least one mitochondrial protein from  \textit{N. digitalis}.
+Majority of the neolocalization did not happen via gaining a mitochondria-targeting signal; only 77 of the 266 proteins from these 66 OGs contained a mitochondria-targeting signal.\\
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
 \lipsum[1]
 \end{abstract}
 
@@ -22,10 +34,117 @@ keyword1 | keyword2 | keyword3
 \end{keywords}
 
 \begin{corrauthor}
-third.professor\at awesome.ac.uk
+dlavrov\at iastate.edu
 \end{corrauthor}
 
 \section*{Introduction}\label{s:introduction}
+
+% Intro to sponges
+Sponges (phylum Porifera) is a large ($>$ 8,000 described species), diverse (four classes, 150 families), and ancient group of sessile, benthic, mostly marine animals.
+% 
+While often considered simple due to the lack of extracellular digestive system, nerves, and muscles, sponges show variety of body organizations, have diverse patterns of embryonic development \citep{ereskovsky2010}, and contain multiple cell types \citep{musser2021}.
+%
+Appearing at least in Early Cambrian \citep{botting2015} and potentially much earlier \citep{turner2021}, sponges have been remarkably successful through their long evolutionary history.
+% 
+Modern sponges are often a dominant component in benthic ecosystems, fulfilling several important roles both in the carbon flux \citep{degoeij2013} and in the silicon cycle \citep{maldonado2012}. 
+%
+In addition, with the decline of reef-building corals on tropical reefs, sponges became one of the most important structural elements in these ecosystems and host a variety of other species \citep{bell2008, bell2018}. 
+%
+While the phylogenetic position of sponges remains a subject of controversy \citep{li2021}, their emblematic cell type -- choanocytes -- provide the clearest connection between animals and unicellular outgroups \citep{maldonado2005}  \citep[but see][]{sogabe2019}.
+%
+This, in turn, can help our understanding of the origin of animal multicellularity and evolution of animal body plan \citep[reviewed in][]{dunn2015,renard2018,cavaliersmith2017}.
+%
+In addition to their ecological and evolutionary importance, sponges are also a valuable source of secondary metabolites, which can be used to produce anticancer, antiviral, anti-fungal, anti-inflammatory and immunosuppressive drugs \citep{sipkema2005a}.\\
+%
+Phylum Porifera is divided into four major classes based on skeleton and tissue composition: Calcarea, Hexactinellida, and Demospongiae, and Homoscleromorpha \cite{gazave2012a}.
+% 
+Demospongiae are by far the most diverse class in terms of number of species, abundance, and ecosystem distribution.
+% 
+
+% (Van Soest et al. 2021) 
+
+% 
+%%% Intro to sponge genomes
+Despite their fascinating biology and multifaceted importance, our knowledge of sponge biology remains limited.
+%
+In particular, only three sponge genomes have been formally described and annotated, those of \textit{Amphimedon queenslandica}, \textit{Tethya wilhelma} \cite{francis2017}, \textit{Ephydatia muelleri} \citep{kenny2020}, all of them belonging to the class Demospongiae.
+%
+\textit{A. queenslandica} genome is 166.7 Mb in size and one of the most gene dense metazoan genomes currently known, with a median of 9 genes per 50 kb and a median intergenic distance of just 587 bp.
+%
+It contains 40,122 coding sequence gene models (excluding isoforms), covering nearly 65\% of total genomic sequence.
+%
+\textit{A. queenslandica} genome organization, average intron size and alternative splicing patterns are more similar to unicellular holozoans than to other animals.
+%
+At the same time \textit{A. queenslandica} gene content is clearly metazoan, encoding components of key metazoan features, such as cell adhesion, cell cycle control, tissue differentiation, apoptosis, innate immunity and development \citep{srivastava2010}.
+%
+\textit{A. queenslandica} genes also possess metazoan-like core promoters populated with binding motifs previously deemed to be specific to bilaterian animals or even to vertebrates, including Nrf-1 and Krüppel-like elements \citep{fernandez-valverde2016}.
+%
+The \textit{T. wilhelma} genome is estimated to be 125 Mbp in size, 40\%GC and contains 37,416 predicted genes (Table 1).
+%
+The \textit{E. muelleri} genome is 326 Mb, 43\% GC reach, and contains 39,245 predicted protein-coding genes \cite{kenny2020}.
+%
+Neither of these species is closely related to \textit{A. queenslandica}, as Haplosclerida has likely split from the rest of Hetersleromorpha in the Cambrian \citep{lavrov2019}
+%
+Hence the genetic distances between {A. queenslandica} and other sponges with sequenced genomes are only marginally smaller than between sponges and outgroups.
+%
+For example, one-to-one orthologs from \textit{T. wilhelma} and \textit{A. queenslandica} have average sequence identity of 57.8\%, just above the identity with N. vectensis (53.5\%) and human (52.0\%).
+%
+Despite this large evolutionary time distance, there are still  ordered blocks of genes identifiable between T. wilhelma and \textit{A. queenslandica} genomes \citep{kenny2020} or even between \textit{Ephydatia muelleri} and several outgroups \citep{kenny2020}.
+%
+In addition to the annotated genomes described above genome-level data are available for several other demosponge species \citep{ryu2016, borisenko2016, francis2017} %Genomic: A. queenslandica, Tethya, "Stylissa", Xestospongia, Ephydatia(?), Plenaster craigi, Halisarca dujardinie Any more?
+%% NOT SURE if we want to add non-demosponge genomes:
+Outside of Demospongiae, emerging models include the homoscleromorph \textit{Oscarella} \citep{nichols2012, belahbib2018}, calcareous sponges \textit{Sycon} and \textit{Leucosolenia} \citep{fortunato2014b}, and the hexactinellid Oopsacas \citep{belahbib2018}
+%%% Problems with sponge genomics
+\paragraph{}
+The scarcity of genomic data from sponges, presence problem for gene prediction and annotation as well as for understanding genome evolution in the group \citep{hotaling2021}.
+%
+The second release of the \textit{A. queenslandica} genome (Aqu2) contains ~10,000 more genes than the original release (Aqu1), and nearly a quarter of previously predicted genes have additional exons \citep{fernandez-valverde2015}.
+%
+As described above, sponges genomes are predicted to contain an unusually high number of genes, with less than half of them showing significant sequence similarities outside of the phylum Porifera.
+%
+Furthermore, a large number of genes (10,000 in case of \textit{E. muelleri}) do not have similar sequences in the Genbank.
+%
+Thus, there remains a huge amount of hidden biology yet to be understood in sponges \citep{dunn2015}.
+%
+The scarcity of genomic data also hinders our ability to identify and understand trends in sponge genome evolution.
+%
+The available data indicates a well conserved and relatively exceptionally compact genome orgaization, at least in Demospongiae, but the absence of genomes from closely related species complicates our analysis.
+\\
+\paragraph{}
+One way to help understand sponge genome evolution, help with gene prediction, and test functional importance of genes is to conduct a comparative analysis of more closely related sponges genomes.
+%
+%%% Introduction to Niphates genome
+%
+The model sponge species \textit{A. queenslandica} belongs to the order Haploslerida within class Demospongiae.
+%
+Order Haplosclerida is the third largest order within Demospongiae (1142 accepted species), is placed in the subclass Hetersleromorpha \citep{morrow2015a}, and forms the sister group to all other lineages within this subclass \citep{borchiellini2004,lavrov2008,simion2017}. 
+%
+While haplosclerid demosponges are found in various habitats, many are common in shallow water environments that makes them easily accessible to researchers, but also more exposed to climate change and pollution.
+%
+\textit{Niphates digitalis} (Lamark, 1814) (Fig. 1), commonly known as the pink vase sponge, is one of the most prominent demosponges in Caribbean. 
+%
+It belongs to the same family (Niphatidae) as \textit{A. queenslandica} and have been shown to be relatively closely related to it as part of the clade B of haplosclerid sponges (CBHS) \citep{redmond2011, redmond2013}.
+%
+Here, we report the nuclear genome of \textit{Niphates digitalis}  and investigate its evolution with an emphasis on mitochondrial biology. 
+%
+%While demosponge genomes were instrumental to understanding the molecular basis of early animal evolution, the sampling is too sparse to investigate genome evolution within Porifera.
+%%
+%Not surprisingly, previous genomic studies have focused extensively on the origin of animal multicellularity \cite{srivastava2010} \cite{sebepedros2018} and other animal novelties, like the origin of nervous system \cite{Sakarya_2007}.
+%%
+%While some inferences were made (e.g., 12K novel genes per genome) they clearly depend on our ability to detect homologous sequences in different species.
+%%
+%It has been also suggested that the large numbers of genes found in sponges can be explained by steady rates of gain in genes via duplications that are not matched by similarly high rates of gene loss.
+%%
+%%See also: Fernández, R. & Gabaldón, T. Gene gain and loss across the metazoan tree of life. Nat. Ecol. Evol. 4, 524–533 (2020).
+%Also absent are receptors for monoamine (serotonin and dopamine) signalling, as well as key components of the biosynthesis pathways for these, as well as ionotropic glutamate receptors. 
+%While the latter are present in calcareous and homoscleromorph sponges and in non-metazoans, demosponges seem to have lost them.
+%
+%Given their apparent anatomical simplicity, it can be surprising to some researchers that sponges have nearly twice the gene complement of other animals, but the high quality of this genome confirms that this is not an artefact of previous genome assemblies, and suggests that gene duplication and adaptation to novel environments are responsible for the high gene counts.
+%As only approximately half of the genes found in sponges can be firmly identified, it is clear that there remains a huge amount of hidden biology yet to be understood in sponges, just as in other non-bilaterians
+
+
+
+
 
 \lipsum{2-6}
 
